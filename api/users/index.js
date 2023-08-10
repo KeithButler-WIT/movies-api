@@ -18,7 +18,9 @@ router.post('/',asyncHandler( async (req, res, next) => {
       res.status(401).json({success: false, msg: 'Please pass username and password.'});
       return next();
     }
+    const regEx = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$/;
     if (req.query.action === 'register') {
+      if ( regEx.test(req.body.password) === false ) return res.status(401).json({ code: 401, msg: 'Authentication failed. Password validation.' });
       await User.create(req.body);
       res.status(201).json({code: 201, msg: 'Successful created new user.'});
     } else {
