@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 
-const ShowSchema = new Schema({
+const TvSchema = new Schema({
   adult: { type: Boolean },
   id: { type: Number, required: true, unique: true },
   poster_path: { type: String },
@@ -31,8 +31,8 @@ const ShowSchema = new Schema({
   tagline: { type: String }
 });
 
-ShowSchema.statics.findByShowDBId = function (id) {
+TvSchema.statics.findByTvDBId = function (id) {
   return this.findOne({ id: id });
 };
 
-export default mongoose.model('Shows', ShowSchema);
+export default mongoose.model('Tvs', TvSchema);

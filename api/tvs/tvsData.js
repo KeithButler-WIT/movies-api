@@ -1,4 +1,4 @@
-export const shows = {
+export const tvs = {
     "page": 1,
     "results": [
         {
@@ -89,7 +89,7 @@ export const shows = {
     "total_results": 10000
 };
 
-export const showReviews = {
+export const tvReviews = {
     "id": 527774,
     "page": 1,
     "results": [
@@ -112,7 +112,7 @@ export const showReviews = {
     "total_results": 2
 };
 
-export const showDetails = {
+export const tvDetails = {
     "adult": false,
     "backdrop_path": "/hJuDvwzS0SPlsE6MNFOpznQltDZ.jpg",
     "belongs_to_collection": null,
@@ -139,7 +139,7 @@ export const showDetails = {
             "name": "Action"
         }
     ],
-    "homepage": "https://shows.disney.com/raya-and-the-last-dragon",
+    "homepage": "https://tvs.disney.com/raya-and-the-last-dragon",
     "id": 527774,
     "imdb_id": "tt5109280",
     "original_language": "en",

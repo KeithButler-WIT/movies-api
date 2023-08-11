@@ -4,8 +4,8 @@ import genreModel from '../api/genres/genreModel';
 import genres from './genres';
 import movieModel from '../api/movies/movieModel';
 import movies from './movies.js';
-import showModel from '../api/shows/showModel';
-import shows from './shows.js';
+import tvModel from '../api/tvs/tvModel';
+import tvs from './tvs.js';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -35,16 +35,16 @@ export async function loadMovies() {
   }
 }
 
-// deletes all shows documents in collection and inserts test data
-export async function loadShows() {
-  console.log('load Shows data');
-  console.log(shows.length);
+// deletes all tvs documents in collection and inserts test data
+export async function loadTvs() {
+  console.log('load Tvs data');
+  console.log(tvs.length);
   try {
-    await showModel.deleteMany();
-    await showModel.collection.insertMany(shows);
-    console.info(`${shows.length} Shows were successfully stored.`);
+    await tvModel.deleteMany();
+    await tvModel.collection.insertMany(tvs);
+    console.info(`${tvs.length} Tvs were successfully stored.`);
   } catch (err) {
-    console.error(`failed to Load show Data: ${err}`);
+    console.error(`failed to Load tv Data: ${err}`);
   }
 }
 
@@ -64,5 +64,5 @@ if (process.env.SEED_DB) {
   loadUsers();
   loadGenres();
   loadMovies();
-  loadShows();
+  loadTvs();
 }

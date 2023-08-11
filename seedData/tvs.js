@@ -1,4 +1,4 @@
-const shows = [
+const tvs = [
     {
         "adult": false,
         "backdrop_path": "/jeAQdDX9nguP6YOX6QSWKDPkbBo.jpg",
@@ -405,4 +405,4 @@ const shows = [
     }
 ];
 
-export default shows;
+export default tvs;
