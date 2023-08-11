@@ -5,11 +5,12 @@ import session from 'express-session';
 // replace existing authenticate import with passport strategy​
 import passport from './authenticate';
 import moviesRouter from './api/movies';
+import showsRouter from './api/shows';
 import genresRouter from './api/genres';
 import usersRouter from './api/users';
 
 import './db';
-import './seedData'
+import './seedData';
 
 dotenv.config();
 
@@ -32,6 +33,7 @@ app.use(passport.initialize());
 
 //update /api/Movie route to use authenticate
 app.use('/api/movies', passport.authenticate('jwt', {session: false}), moviesRouter);
+app.use('/api/shows', passport.authenticate('jwt', {session: false}), showsRouter);
 app.use('/api/genres', genresRouter);
 app.use('/api/users', usersRouter);
 app.use(errHandler);
