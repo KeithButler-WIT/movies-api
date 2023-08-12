@@ -708,26 +708,6 @@ const persons = [
       "known_for": [
         {
           "adult": false,
-          "backdrop_path": "/uN005iCKRR900Xhx0HEvU4MbYN1.jpg",
-          "genre_ids": [
-            28,
-            878,
-            27
-          ],
-          "id": 345940,
-          "media_type": "movie",
-          "original_language": "en",
-          "original_title": "The Meg",
-          "overview": "A deep sea submersible pilot revisits his past fears in the Mariana Trench, and accidentally unleashes the seventy foot ancestor of the Great White Shark believed to be extinct.",
-          "poster_path": "/eyWICPcxOuTcDDDbTMOZawoOn8d.jpg",
-          "release_date": "2018-08-09",
-          "title": "The Meg",
-          "video": false,
-          "vote_average": 6.2,
-          "vote_count": 6766
-        },
-        {
-          "adult": false,
           "backdrop_path": "/zN41DPmPhwmgJjHwezALdrdvD0h.jpg",
           "genre_ids": [
             28,

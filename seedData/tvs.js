@@ -1,407 +1,386 @@
 const tvs = [
     {
-        "adult": false,
-        "backdrop_path": "/jeAQdDX9nguP6YOX6QSWKDPkbBo.jpg",
-        "genre_ids": [
-            28,
-            14,
-            878
-        ],
-        "id": 590706,
-        "original_language": "en",
-        "original_title": "Jiu Jitsu",
-        "overview": "Every six years, an ancient order of jiu-jitsu fighters joins forces to battle a vicious race of alien invaders. But when a celebrated war hero goes down in defeat, the fate of the planet and mankind hangs in the balance.",
-        "popularity": 2633.943,
-        "poster_path": "/eLT8Cu357VOwBVTitkmlDEg32Fs.jpg",
-        "release_date": "2020-11-20",
-        "title": "Jiu Jitsu",
-        "video": false,
-        "vote_average": 5.9,
-        "vote_count": 111
+      "backdrop_path": "/jWXrQstj7p3Wl5MfYWY6IHqRpDb.jpg",
+      "first_air_date": "1952-12-26",
+      "genre_ids": [
+        10763
+      ],
+      "id": 94722,
+      "name": "Tagesschau",
+      "origin_country": [
+        "DE"
+      ],
+      "original_language": "de",
+      "original_name": "Tagesschau",
+      "overview": "German daily news program, the oldest still existing program on German television.",
+      "popularity": 3541.413,
+      "poster_path": "/7dFZJ2ZJJdcmkp05B9NWlqTJ5tq.jpg",
+      "vote_average": 7.6,
+      "vote_count": 102
     },
     {
-        "adult": false,
-        "backdrop_path": "/vam9VHLZl8tqNwkp1zjEAxIOrkk.jpg",
-        "genre_ids": [
-            10751,
-            14,
-            10770
-        ],
-        "id": 671583,
-        "original_language": "en",
-        "original_title": "Upside-Down Magic",
-        "overview": "Nory and her best friend Reina enter the Sage Academy for Magical Studies, where Nory’s unconventional powers land her in a class for those with wonky, or “upside-down,” magic. Undaunted, Nory sets out to prove that that upside-down magic can be just as powerful as right-side-up.",
-        "popularity": 2362.99,
-        "poster_path": "/xfYMQNApIIh8KhpNVtG1XRz0ZAp.jpg",
-        "release_date": "2020-07-31",
-        "title": "Upside-Down Magic",
-        "video": false,
-        "vote_average": 7.6,
-        "vote_count": 64
+      "backdrop_path": "/t2rAdgjSh0WYbXzdOB5zTDqzdCI.jpg",
+      "first_air_date": "2022-11-02",
+      "genre_ids": [
+        18
+      ],
+      "id": 213713,
+      "name": "Faltu",
+      "origin_country": [
+        "IN"
+      ],
+      "original_language": "hi",
+      "original_name": "Faltu",
+      "overview": "What's in a name? Amidst the arid landscape of Rajasthan, a young woman with dreamy eyes struggles to prove her worth.",
+      "popularity": 2942.877,
+      "poster_path": "/lgyFuoXs7GvKJN0mNm7z7OMOFuZ.jpg",
+      "vote_average": 7,
+      "vote_count": 103
     },
     {
-        "adult": false,
-        "backdrop_path": "/wzJRB4MKi3yK138bJyuL9nx47y6.jpg",
-        "genre_ids": [
-            28,
-            53,
-            878
-        ],
-        "id": 577922,
-        "original_language": "en",
-        "original_title": "Tenet",
-        "overview": "Armed with only one word - Tenet - and fighting for the survival of the entire world, the Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.",
-        "popularity": 1973.492,
-        "poster_path": "/k68nPLbIST6NP96JmTxmZijEvCA.jpg",
-        "release_date": "2020-08-22",
-        "title": "Tenet",
-        "video": false,
-        "vote_average": 7.4,
-        "vote_count": 2638
+      "backdrop_path": null,
+      "first_air_date": "2022-11-28",
+      "genre_ids": [
+        18
+      ],
+      "id": 215315,
+      "name": "Rabb Se Hai Dua",
+      "origin_country": [
+        "IN"
+      ],
+      "original_language": "hi",
+      "original_name": "रब्ब से है दुआ",
+      "overview": "Dua and her husband are a perfect married couple in the eyes of their family. However, Dua’s life turns upside down when her husband seeks her permission to marry another woman.",
+      "popularity": 2802.805,
+      "poster_path": "/6ikbefd7VeopbBuGgioYMNU5bQj.jpg",
+      "vote_average": 6.6,
+      "vote_count": 60
     },
     {
-        "adult": false,
-        "backdrop_path": "/ckfwfLkl0CkafTasoRw5FILhZAS.jpg",
-        "genre_ids": [
-            28,
-            35,
-            14
-        ],
-        "id": 602211,
-        "original_language": "en",
-        "original_title": "Fatman",
-        "overview": "A rowdy, unorthodox Santa Claus is fighting to save his declining business. Meanwhile, Billy, a neglected and precocious 12 year old, hires a hit man to kill Santa after receiving a lump of coal in his stocking.",
-        "popularity": 1848.361,
-        "poster_path": "/4n8QNNdk4BOX9Dslfbz5Dy6j1HK.jpg",
-        "release_date": "2020-11-13",
-        "title": "Fatman",
-        "video": false,
-        "vote_average": 6.1,
-        "vote_count": 118
+      "backdrop_path": "/3n2TjKw3HrwDqgVgcynvantOfS3.jpg",
+      "first_air_date": "2023-01-04",
+      "genre_ids": [
+        18,
+        10751
+      ],
+      "id": 215103,
+      "name": "Teri Meri Doriyaann",
+      "origin_country": [
+        "IN"
+      ],
+      "original_language": "hi",
+      "original_name": "तेरी मेरी डोरियाँ",
+      "overview": "It’s hate at first sight for Sahiba and Angad! But destined to be together, their lives get intertwined by a marriage alliance, and a love-hate story ensues.",
+      "popularity": 2784.879,
+      "poster_path": "/4BHDmYiuSnNL3nqKIOzLJKYX4AN.jpg",
+      "vote_average": 7,
+      "vote_count": 85
     },
     {
-        "adult": false,
-        "backdrop_path": "/zKv7KF0pH9ASv2uGgTvTylMlxQn.jpg",
-        "genre_ids": [
-            37
-        ],
-        "id": 729648,
-        "original_language": "en",
-        "original_title": "The Dalton Gang",
-        "overview": "When their brother Frank is killed by an outlaw, brothers Bob Dalton, Emmett Dalton and Gray Dalton join their local sheriff's department. When they are cheated by the law, they turn to crime, robbing trains and anything else they can steal from over the course of two years in the early 1890's. Trying to out do Jesse James, they attempt to rob two banks at once in October of 1892, and things get ugly",
-        "popularity": 1441.44,
-        "poster_path": "/6OeGqp18oZucUGziMIRNhLouZ75.jpg",
-        "release_date": "2020-11-02",
-        "title": "The Dalton Gang",
-        "video": false,
-        "vote_average": 4.3,
-        "vote_count": 13
+      "backdrop_path": "/1Vj73YrMj4OLBppgZdWXoGZlsGI.jpg",
+      "first_air_date": "2022-12-05",
+      "genre_ids": [
+        18,
+        10751,
+        10766
+      ],
+      "id": 215902,
+      "name": "Katha Ankahee",
+      "origin_country": [
+        "IN"
+      ],
+      "original_language": "hi",
+      "original_name": "कथा अनकही",
+      "overview": "Katha, a single parent, is in need of funds for her son's medical treatment. She comes across Viaan, who offers help but his conditions put her in an awkward situation.",
+      "popularity": 1685.572,
+      "poster_path": "/uhXU0SMPMlemKGHmwbldM60qqmW.jpg",
+      "vote_average": 7.7,
+      "vote_count": 76
     },
     {
-        "adult": false,
-        "backdrop_path": "/n6bUvigpRFqSwmPp1m2YADdbRBc.jpg",
-        "genre_ids": [
-            80,
-            53,
-            18
-        ],
-        "id": 475557,
-        "original_language": "en",
-        "original_title": "Joker",
-        "overview": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
-        "popularity": 1340.942,
-        "poster_path": "/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
-        "release_date": "2019-10-02",
-        "title": "Joker",
-        "video": false,
-        "vote_average": 8.2,
-        "vote_count": 15818
+      "backdrop_path": "/yJEFbFax9fb8ePB0rK9UIQoXMG4.jpg",
+      "first_air_date": "2023-04-17",
+      "genre_ids": [
+        18
+      ],
+      "id": 222100,
+      "name": "Meant To Be",
+      "origin_country": [
+        "KR"
+      ],
+      "original_language": "ko",
+      "original_name": "Meant To Be",
+      "overview": "The work depicts the lives of two women, Lee Hae In, and Kang Se Na, who fell into different fates as children.",
+      "popularity": 1578.177,
+      "poster_path": "/xdzSO56WueBMW45QHWemV3D6mzJ.jpg",
+      "vote_average": 6.9,
+      "vote_count": 75
     },
     {
-        "adult": false,
-        "backdrop_path": "/mZgbq4Zpxz7ozWXl4asj6vNdlIi.jpg",
-        "genre_ids": [
-            35,
-            10751,
-            14
-        ],
-        "id": 454433,
-        "original_language": "en",
-        "original_title": "Magic Camp",
-        "overview": "Andy, at the urging of his former mentor and Magic Camp owner Roy Preston, returns to the camp of his youth hoping to reignite his career. Instead, he finds inspiration in his ragtag bunch of rookie magicians.",
-        "popularity": 1307.25,
-        "poster_path": "/awcPLFFYjufRXd2oAAP6ZIXF9vM.jpg",
-        "release_date": "2020-08-14",
-        "title": "Magic Camp",
-        "video": false,
-        "vote_average": 7.1,
-        "vote_count": 102
+      "backdrop_path": "/jtAh65bX9Ydy2NFkwTN6V9WSzWb.jpg",
+      "first_air_date": "2023-02-07",
+      "genre_ids": [
+        18
+      ],
+      "id": 220525,
+      "name": "Maitree",
+      "origin_country": [],
+      "original_language": "hi",
+      "original_name": "मैत्री",
+      "overview": "",
+      "popularity": 2364.432,
+      "poster_path": "/k57vsZ5Pl80WRR02ahgC3QLdhhL.jpg",
+      "vote_average": 8.1,
+      "vote_count": 14
     },
     {
-        "adult": false,
-        "backdrop_path": "/2Fk3AB8E9dYIBc2ywJkxk8BTyhc.jpg",
-        "genre_ids": [
-            28,
-            53
-        ],
-        "id": 524047,
-        "original_language": "en",
-        "original_title": "Greenland",
-        "overview": "John Garrity, his estranged wife and their young son embark on a perilous journey to find sanctuary as a planet-killing comet hurtles toward Earth. Amid terrifying accounts of cities getting levelled, the Garrity's experience the best and worst in humanity. As the countdown to the global apocalypse approaches zero, their incredible trek culminates in a desperate and last-minute flight to a possible safe haven.",
-        "popularity": 1143.073,
-        "poster_path": "/bNo2mcvSwIvnx8K6y1euAc1TLVq.jpg",
-        "release_date": "2020-07-29",
-        "title": "Greenland",
-        "video": false,
-        "vote_average": 7.2,
-        "vote_count": 853
+      "backdrop_path": "/rj3jBAZwPiOgkwAy1205MAgLahj.jpg",
+      "first_air_date": "2018-08-27",
+      "genre_ids": [
+        10766
+      ],
+      "id": 81329,
+      "name": "Chronicles of the Sun",
+      "origin_country": [
+        "FR"
+      ],
+      "original_language": "fr",
+      "original_name": "Un si grand soleil",
+      "overview": "",
+      "popularity": 1395.032,
+      "poster_path": "/t6jVlbPMtZOJoAOfeoR4yQmnjXM.jpg",
+      "vote_average": 7.6,
+      "vote_count": 33
     },
     {
-        "adult": false,
-        "backdrop_path": "/qAKvUu2FSaDlnqznY4VOp5PmjIF.jpg",
-        "genre_ids": [
-            28,
-            12,
-            18,
-            14
-        ],
-        "id": 337401,
-        "original_language": "en",
-        "original_title": "Mulan",
-        "overview": "When the Emperor of China issues a decree that one man per family must serve in the Imperial Chinese Army to defend the country from Huns, Hua Mulan, the eldest daughter of an honored warrior, steps in to take the place of her ailing father. She is spirited, determined and quick on her feet. Disguised as a man by the name of Hua Jun, she is tested every step of the way and must harness her innermost strength and embrace her true potential.",
-        "popularity": 1104.142,
-        "poster_path": "/aKx1ARwG55zZ0GpRvU2WrGrCG9o.jpg",
-        "release_date": "2020-09-04",
-        "title": "Mulan",
-        "video": false,
-        "vote_average": 7.2,
-        "vote_count": 3241
+      "backdrop_path": "/m0TiLZ79RR19Zz0AZruQSBeH39x.jpg",
+      "first_air_date": "2019-07-09",
+      "genre_ids": [
+        10764
+      ],
+      "id": 90521,
+      "name": "Love Island",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Love Island",
+      "overview": "American version of the British dating reality competition in which ten singles come to stay in a villa for a few weeks and have to couple up with one another. Over the course of those weeks, they face the public vote and might be eliminated from the show. Other islanders join and try to break up the couples.",
+      "popularity": 2228.294,
+      "poster_path": "/kU2y21cls8WargMaX7KI47URMjD.jpg",
+      "vote_average": 7.4,
+      "vote_count": 99
     },
     {
-        "adult": false,
-        "backdrop_path": "/86L8wqGMDbwURPni2t7FQ0nDjsH.jpg",
-        "genre_ids": [
-            28,
-            53
-        ],
-        "id": 724989,
-        "original_language": "en",
-        "original_title": "Hard Kill",
-        "overview": "The work of billionaire tech CEO Donovan Chalmers is so valuable that he hires mercenaries to protect it, and a terrorist group kidnaps his daughter just to get it.",
-        "popularity": 1067.409,
-        "poster_path": "/ugZW8ocsrfgI95pnQ7wrmKDxIe.jpg",
-        "release_date": "2020-10-23",
-        "title": "Hard Kill",
-        "video": false,
-        "vote_average": 5,
-        "vote_count": 224
+      "backdrop_path": "/wJmcuxa0C4AERmA9mejxm9qRYDj.jpg",
+      "first_air_date": "2022-06-06",
+      "genre_ids": [
+        80,
+        9648
+      ],
+      "id": 203504,
+      "name": "Aashiqana",
+      "origin_country": [
+        "IN"
+      ],
+      "original_language": "hi",
+      "original_name": "आशिकाना",
+      "overview": "A serial killer sparks the story of uptight Yashvardhan and feisty Chikki. Plagued by misunderstandings, how far do they have to go to nab the murderer?",
+      "popularity": 2163.536,
+      "poster_path": "/a4Z6Uohb6Ln5vcPvMUzwyn3WBjP.jpg",
+      "vote_average": 6.5,
+      "vote_count": 20
     },
     {
-        "adult": false,
-        "backdrop_path": "/5846jHODKbja38USbFcXgOnsfqb.jpg",
-        "genre_ids": [
-            10751,
-            14,
-            12
-        ],
-        "id": 654028,
-        "original_language": "en",
-        "original_title": "The Christmas Chronicles: Part Two",
-        "overview": "Kate Pierce is reluctantly spending Christmas with her mom’s new boyfriend and his son Jack. But when the North Pole and Christmas are threatened to be destroyed, Kate and Jack are unexpectedly pulled into a new adventure with Santa Claus.",
-        "popularity": 1004.099,
-        "poster_path": "/6sG0kbEvAi3RRLcGGU5h8l3qAPa.jpg",
-        "release_date": "2020-11-18",
-        "title": "The Christmas Chronicles: Part Two",
-        "video": false,
-        "vote_average": 7.2,
-        "vote_count": 201
+      "backdrop_path": "/mAJ84W6I8I272Da87qplS2Dp9ST.jpg",
+      "first_air_date": "2023-01-23",
+      "genre_ids": [
+        9648,
+        18
+      ],
+      "id": 202250,
+      "name": "Dirty Linen",
+      "origin_country": [
+        "PH"
+      ],
+      "original_language": "tl",
+      "original_name": "Dirty Linen",
+      "overview": "To exact vengeance, a young woman infiltrates the household of an influential family as a housemaid to expose their dirty secrets. However, love will get in the way of her revenge plot.",
+      "popularity": 1305.692,
+      "poster_path": "/aoAZgnmMzY9vVy9VWnO3U5PZENh.jpg",
+      "vote_average": 6.7,
+      "vote_count": 90
     },
     {
-        "adult": false,
-        "backdrop_path": "/fTDzKoQIh1HeyjfpG5AHMi2jxAJ.jpg",
-        "genre_ids": [
-            28,
-            35
-        ],
-        "id": 682377,
-        "original_language": "en",
-        "original_title": "Chick Fight",
-        "overview": "When Anna Wyncomb is introduced to an an underground, all-female fight club in order to turn the mess of her life around, she discovers she is much more personally connected to the history of the club than she could ever imagine.",
-        "popularity": 984.768,
-        "poster_path": "/4ZocdxnOO6q2UbdKye2wgofLFhB.jpg",
-        "release_date": "2020-11-13",
-        "title": "Chick Fight",
-        "video": false,
-        "vote_average": 5.8,
-        "vote_count": 48
+      "backdrop_path": "/5YfFibGB0Mjcl2RHUqztlPBCJp8.jpg",
+      "first_air_date": "2023-06-12",
+      "genre_ids": [
+        18,
+        10766
+      ],
+      "id": 226411,
+      "name": "Mía es la venganza",
+      "origin_country": [
+        "ES"
+      ],
+      "original_language": "es",
+      "original_name": "Mía es la venganza",
+      "overview": "",
+      "popularity": 1297.933,
+      "poster_path": "/bReUZMOPDSs4fpONIIQER6X4yNm.jpg",
+      "vote_average": 7.5,
+      "vote_count": 44
     },
     {
-        "adult": false,
-        "backdrop_path": "/gEjNlhZhyHeto6Fy5wWy5Uk3A9D.jpg",
-        "genre_ids": [
-            28,
-            27,
-            53
-        ],
-        "id": 581392,
-        "original_language": "ko",
-        "original_title": "반도",
-        "overview": "A soldier and his team battle hordes of post-apocalyptic zombies in the wastelands of the Korean Peninsula.",
-        "popularity": 973.861,
-        "poster_path": "/sy6DvAu72kjoseZEjocnm2ZZ09i.jpg",
-        "release_date": "2020-07-15",
-        "title": "Peninsula",
-        "video": false,
-        "vote_average": 6.9,
-        "vote_count": 867
+      "backdrop_path": "/xYTSIhkbvj6eVN8GxozdEXi6piA.jpg",
+      "first_air_date": "2023-06-04",
+      "genre_ids": [
+        10764
+      ],
+      "id": 226658,
+      "name": "La Casa de los Famosos Mexico",
+      "origin_country": [
+        "MX"
+      ],
+      "original_language": "es",
+      "original_name": "La Casa de los Famosos Mexico",
+      "overview": "La Casa de los Famosos Mexico",
+      "popularity": 1293.155,
+      "poster_path": "/uh2NbTkUheENmBlUs7Kwb5EaAXQ.jpg",
+      "vote_average": 7.6,
+      "vote_count": 68
     },
     {
-        "adult": false,
-        "backdrop_path": "/8rIoyM6zYXJNjzGseT3MRusMPWl.jpg",
-        "genre_ids": [
-            14,
-            10751,
-            12,
-            35,
-            27
-        ],
-        "id": 531219,
-        "original_language": "en",
-        "original_title": "Roald Dahl's The Witches",
-        "overview": "In late 1967, a young orphaned boy goes to live with his loving grandma in the rural Alabama town of Demopolis. As the boy and his grandmother encounter some deceptively glamorous but thoroughly diabolical witches, she wisely whisks him away to a seaside resort. Regrettably, they arrive at precisely the same time that the world's Grand High Witch has gathered.",
-        "popularity": 870.023,
-        "poster_path": "/betExZlgK0l7CZ9CsCBVcwO1OjL.jpg",
-        "release_date": "2020-10-26",
-        "title": "Roald Dahl's The Witches",
-        "video": false,
-        "vote_average": 6.9,
-        "vote_count": 869
+      "backdrop_path": "/5MkBAawsj7O9zitVtzMXagyrIBw.jpg",
+      "first_air_date": "2023-01-30",
+      "genre_ids": [
+        18,
+        10766
+      ],
+      "id": 217216,
+      "name": "Flor Sem Tempo",
+      "origin_country": [
+        "PT"
+      ],
+      "original_language": "pt",
+      "original_name": "Flor Sem Tempo",
+      "overview": "",
+      "popularity": 1274.636,
+      "poster_path": "/bclnfDXvx7UydFSk83B258vRRvI.jpg",
+      "vote_average": 7.6,
+      "vote_count": 25
     },
     {
-        "adult": false,
-        "backdrop_path": "/gnf4Cb2rms69QbCnGFJyqwBWsxv.jpg",
-        "genre_ids": [
-            53,
-            28,
-            18,
-            80
-        ],
-        "id": 671039,
-        "original_language": "fr",
-        "original_title": "Bronx",
-        "overview": "Caught in the crosshairs of police corruption and Marseille’s warring gangs, a loyal cop must protect his squad by taking matters into his own hands.",
-        "popularity": 794.676,
-        "poster_path": "/9HT9982bzgN5on1sLRmc1GMn6ZC.jpg",
-        "release_date": "2020-10-30",
-        "title": "Rogue City",
-        "video": false,
-        "vote_average": 5.9,
-        "vote_count": 272
+      "backdrop_path": "/kdF7ZTktLHVVhAhI90uuzqlZqJI.jpg",
+      "first_air_date": "2023-06-06",
+      "genre_ids": [
+        18
+      ],
+      "id": 228093,
+      "name": "Titlie",
+      "origin_country": [
+        "IN"
+      ],
+      "original_language": "hi",
+      "original_name": "Titlie",
+      "overview": "Obsessed by the notion of fairy tale love , Titlie marries her beau Garv . Soon , the picture - perfect romance turns abusive , forcing her to wrestle with reality .",
+      "popularity": 1956.659,
+      "poster_path": "/5kZi1LCFugNAeDCWOF3ornGNm2W.jpg",
+      "vote_average": 7.9,
+      "vote_count": 67
     },
     {
-        "adult": false,
-        "backdrop_path": "/iQxJuPqCGOO4Iy3uFbMWCIGHkwE.jpg",
-        "genre_ids": [
-            10752,
-            28
-        ],
-        "id": 635780,
-        "original_language": "en",
-        "original_title": "Rogue Warfare: Death of a Nation",
-        "overview": "After rescuing Daniel from the terrorist Black Mask Organization, the team uncovers plans for a deadly bomb set to detonate in 36 hours that threatens world order. With no time to recover, Daniel must throw his life back on the line as he and his elite team of soldiers race against time to find the bomb and defeat their enemy once and for all. Outnumbered and overmatched, each soldier must find their inner strength and skill to overcome insurmountable odds.",
-        "popularity": 790.044,
-        "poster_path": "/8GVpIEBqlRBvx28G0LfEX0U8D2k.jpg",
-        "release_date": "2020-09-25",
-        "title": "Rogue Warfare: Death of a Nation",
-        "video": false,
-        "vote_average": 4.8,
-        "vote_count": 10
+      "backdrop_path": "/uwazmTlEGwuGuKK1OM1Tc1onXPn.jpg",
+      "first_air_date": "2023-06-12",
+      "genre_ids": [],
+      "id": 228459,
+      "name": "Tierra de Esperanza",
+      "origin_country": [
+        "MX"
+      ],
+      "original_language": "es",
+      "original_name": "Tierra de Esperanza",
+      "overview": "",
+      "popularity": 1244.57,
+      "poster_path": "/bUfbmaeHoWeqXC6rL8bSFwPfoNJ.jpg",
+      "vote_average": 7.8,
+      "vote_count": 65
     },
     {
-        "adult": false,
-        "backdrop_path": "/d1sVANghKKMZNvqjW0V6y1ejvV9.jpg",
-        "genre_ids": [
-            16,
-            28,
-            12,
-            14,
-            18
-        ],
-        "id": 635302,
-        "original_language": "ja",
-        "original_title": "劇場版「鬼滅の刃」無限列車編",
-        "overview": "Tanjirō Kamado, joined with Inosuke Hashibira, a boy raised by boars who wears a boar's head, and Zenitsu Agatsuma, a scared boy who reveals his true power when he sleeps, boards the Infinity Train on a new mission with the Fire Hashira, Kyōjurō Rengoku, to defeat a demon who has been tormenting the people and killing the demon slayers who oppose it!",
-        "popularity": 738.31,
-        "poster_path": "/h8Rb9gBr48ODIwYUttZNYeMWeUU.jpg",
-        "release_date": "2020-10-16",
-        "title": "Demon Slayer the Movie: Mugen Train",
-        "video": false,
-        "vote_average": 6,
-        "vote_count": 87
+      "backdrop_path": "/o5GsA1G5YEruuUNOYvWjlArIC37.jpg",
+      "first_air_date": "2022-09-19",
+      "genre_ids": [
+        10766
+      ],
+      "id": 210506,
+      "name": "Sangue Oculto",
+      "origin_country": [
+        "PT"
+      ],
+      "original_language": "pt",
+      "original_name": "Sangue Oculto",
+      "overview": "",
+      "popularity": 1238.776,
+      "poster_path": "/myCEG6C5Nk181jXzBek5MQEXpM2.jpg",
+      "vote_average": 5.9,
+      "vote_count": 12
     },
     {
-        "adult": false,
-        "backdrop_path": "/wu1uilmhM4TdluKi2ytfz8gidHf.jpg",
-        "genre_ids": [
-            16,
-            14,
-            12,
-            35,
-            10751
-        ],
-        "id": 400160,
-        "original_language": "en",
-        "original_title": "The SpongeBob Movie: Sponge on the Run",
-        "overview": "When his best friend Gary is suddenly snatched away, SpongeBob takes Patrick on a madcap mission far beyond Bikini Bottom to save their pink-shelled pal.",
-        "popularity": 716.962,
-        "poster_path": "/jlJ8nDhMhCYJuzOw3f52CP1W8MW.jpg",
-        "release_date": "2020-08-14",
-        "title": "The SpongeBob Movie: Sponge on the Run",
-        "video": false,
-        "vote_average": 8,
-        "vote_count": 1669
+      "backdrop_path": "/wq269s8vzr8xrwrIALtl4UfmN6X.jpg",
+      "first_air_date": "2023-06-12",
+      "genre_ids": [],
+      "id": 228627,
+      "name": "Do Dil Mil Rahe Hai",
+      "origin_country": [
+        "IN"
+      ],
+      "original_language": "hi",
+      "original_name": "Do Dil Mil Rahe Hai",
+      "overview": "He repels love , she resembles it ! Rishi and Pihu are worlds apart but unaware of the past that connects them . Will fate lead the duo down the road to true love ?",
+      "popularity": 1924.345,
+      "poster_path": "/juYg1PQzCmDJYyGtrW0Xbvke1jx.jpg",
+      "vote_average": 7.8,
+      "vote_count": 45
     },
     {
-        "adult": false,
-        "backdrop_path": "/54yOImQgj8i85u9hxxnaIQBRUuo.jpg",
-        "genre_ids": [
-            28,
-            80,
-            18,
-            53
-        ],
-        "id": 539885,
-        "original_language": "en",
-        "original_title": "Ava",
-        "overview": "A black ops assassin is forced to fight for her own survival after a job goes dangerously wrong.",
-        "popularity": 663.458,
-        "poster_path": "/qzA87Wf4jo1h8JMk9GilyIYvwsA.jpg",
-        "release_date": "2020-07-02",
-        "title": "Ava",
-        "video": false,
-        "vote_average": 5.6,
-        "vote_count": 757
+      "backdrop_path": "/5e1MxLWTJh6n4qtYz0vlevOK6qW.jpg",
+      "first_air_date": "2023-07-03",
+      "genre_ids": [
+        18
+      ],
+      "id": 229932,
+      "name": "Pyaar Ka Pehla Adhyaya  - Shiv Shakti",
+      "origin_country": [
+        "IN"
+      ],
+      "original_language": "hi",
+      "original_name": "Pyaar Ka Pehla Adhyaya  - Shiv Shakti",
+      "overview": "Shiv has a rewarding career as a doctor, but his personal life is in tatters. Shakti, an orphan, is a nurturer by nature. Will Shakti heal a broken Shiv?",
+      "popularity": 1939.344,
+      "poster_path": "/jHK9bCDefHq43cHvMVUM7SLumYF.jpg",
+      "vote_average": 8.2,
+      "vote_count": 30
     },
     {
-        "adult": false,
-        "backdrop_path": "/aO5ILS7qnqtFIprbJ40zla0jhpu.jpg",
-        "genre_ids": [
-            28,
-            53,
-            12,
-            18
-        ],
-        "id": 741067,
-        "original_language": "en",
-        "original_title": "Welcome to Sudden Death",
-        "overview": "Jesse Freeman is a former special forces officer and explosives expert now working a regular job as a security guard in a state-of-the-art basketball arena. Trouble erupts when a tech-savvy cadre of terrorists kidnap the team's owner and Jesse's daughter during opening night. Facing a ticking clock and impossible odds, it's up to Jesse to not only save them but also a full house of fans in this highly charged action thriller.",
-        "popularity": 624.502,
-        "poster_path": "/elZ6JCzSEvFOq4gNjNeZsnRFsvj.jpg",
-        "release_date": "2020-09-29",
-        "title": "Welcome to Sudden Death",
-        "video": false,
-        "vote_average": 6.3,
-        "vote_count": 184
+      "backdrop_path": "/aWPhMZ0P2DyfWB7k5NXhGHSZHGC.jpg",
+      "first_air_date": "2023-05-08",
+      "genre_ids": [
+        18,
+        80,
+        10766
+      ],
+      "id": 209265,
+      "name": "Land of Desire",
+      "origin_country": [
+        "BR"
+      ],
+      "original_language": "pt",
+      "original_name": "Terra e Paixão",
+      "overview": "The saga of a woman, guided by the power of love and moved by the desire for justice, who crosses paths with a family divided by ambition and many secrets.",
+      "popularity": 1800.417,
+      "poster_path": "/5kCMJ0vVzN9PsoamKctNnUz68Q2.jpg",
+      "vote_average": 6.3,
+      "vote_count": 98
     }
 ];
 
