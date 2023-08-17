@@ -1,0 +1,24 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Movies API
+  description: A sample API to illustrate OpenAPI concepts
+paths:
+  /movies:
+    get:
+      description: Returns a list of stuff
+      responses:
+        '200':
+          description: Successful response
+  /persons:
+    get:
+      description: Returns a list of stuff
+      responses:
+        '200':
+          description: Successful response
+  /tvs:
+    get:
+      description: Returns a list of stuff
+      responses:
+        '200':
+          description: Successful response
