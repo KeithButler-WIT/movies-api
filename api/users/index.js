@@ -52,6 +52,33 @@ router.put('/:id', async (req, res) => {
     }
 });
 
+// TODO: Delete user by id
+router.delete('/:id', async (req, res) => {
+    if (req.body._id) delete req.body._id;
+    const result = await User.deleteOne({
+        _id: req.params.id,
+    }, req.body);
+    if (result.matchedCount) {
+        res.status(200).json({ code:200, msg: 'User delete Sucessfully' });
+    } else {
+        res.status(404).json({ code: 404, msg: 'Unable to Delete User' });
+    }
+});
+
+// TODO: Delete user by username
+router.delete('/:userName', async (req, res) => {
+    if (req.body._id) delete req.body._id;
+    const result = await User.deleteOne({
+        _id: req.params.id,
+    }, req.body);
+    if (result.matchedCount) {
+        res.status(200).json({ code:200, msg: 'User delete Sucessfully' });
+    } else {
+        res.status(404).json({ code: 404, msg: 'Unable to Delete User' });
+    }
+});
+
+
 router.get('/:userName/favourites', asyncHandler( async (req, res) => {
   const userName = req.params.userName;
   const user = await User.findByUserName(userName).populate('favourites');
