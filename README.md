@@ -2,6 +2,7 @@
 
 ​
 Name: Keith Butler
+
 Student Number: 20089137
 ​
 
@@ -30,7 +31,6 @@ Student Number: 20089137
 
 ## Installation Requirements
 
-​
 Requirements:
 ``` sh
 node v16.20.1
@@ -38,19 +38,21 @@ npm
 mongodb
 ```
 
-
+​
+Installation:
 ``` sh
 git clone https://github.com/KeithButler-WIT/movies-api.git
 ```
-​
-followed by installation
 
 ``` sh
+cd movies-api
 npm install
 ```
 ​
 
 ## API Configuration
+
+Here is an example configuration
 
 ```bat
 REACT_APP_TMDB_KEY=YourTMDBKey
@@ -65,8 +67,6 @@ SECRET=YourJWTSecret
 
 
 ## API Design
-
-Give an overview of your web API design, perhaps similar to the following:
 ​
 |                               | GET                       | POST                          | PUT | DELETE |
 |-------------------------------|---------------------------|-------------------------------|-----|--------|
@@ -84,14 +84,13 @@ Give an overview of your web API design, perhaps similar to the following:
 
 ## Security and Authentication
 
-Give details of authentication/ security implemented on the API(e.g. passport/sessions). Indicate which routes are protected. **REMEMBER: DON'T PUT YOUR OWN USERNAMES/PASSWORDS/AUTH KEYS IN THE README OR ON GITHUB**
-
 Movies/Actors/Shows routes are protected and require the user to be signed in to view them.
-Users can authenticate at the route 
+
+Users can register at route 
+Then can authenticate at route 
 ​
 
 ## Integrating with React App
-
 ​
 Describe how you integrated your React app with the API. Perhaps link to the React App repo and give an example of an API call from React App. For example:
 ​
@@ -113,12 +112,14 @@ export const getMovies = () => {
 ​
 
 ## Extra features
-
 ​
-. . Briefly explain any non-standard features, functional or non-functional, developed for the app.  
-
 - Deleting users
+    - By id
+    - By username
 - Searching users
+    - By id 
+    - By username
+- Password validation
 ​
 
 ## Independent learning.
