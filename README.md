@@ -68,19 +68,20 @@ SECRET=YourJWTSecret
 
 ## API Design
 ​
-|                               | GET                       | POST                          | PUT | DELETE |
-|-------------------------------|---------------------------|-------------------------------|-----|--------|
-| /api/movies                   | Gets a list of movies     | N/A                           | N/A |        |
-| /api/movies/{movieid}         | Get a Movie               | N/A                           | N/A | N/A    |
-| /api/movies/{movieid}/reviews | Get all reviews for movie | Create a new review for Movie | N/A | N/A    |
-| /api/shows                    | Gets a list of shows      | N/A                           | N/A |        |
-| /api/shows/{showid}           | Get a show                | N/A                           | N/A | N/A    |
-| /api/actors                   | Gets a list of actor      | N/A                           | N/A |        |
-| /api/actors/{actorid}         | Get a actor               | N/A                           | N/A | N/A    |
-| /api/users                    | Gets a list of actor      | N/A                           | N/A |        |
-| /api/users/{userid}           | Get a actor               | N/A                           | N/A | N/A    |
-| ...                           | ...                       | ...                           | ... | ...    |
+|                               | GET                       | POST                          | PUT | DELETE       |
+|-------------------------------|---------------------------|-------------------------------|-----|--------------|
+| /api/movies                   | Gets a list of movies     | N/A                           | N/A |              |
+| /api/movies/{movieid}         | Get a Movie               | N/A                           | N/A | N/A          |
+| /api/movies/{movieid}/reviews | Get all reviews for movie | Create a new review for Movie | N/A | N/A          |
+| /api/shows                    | Gets a list of shows      | N/A                           | N/A |              |
+| /api/shows/{showid}           | Get a show                | N/A                           | N/A | N/A          |
+| /api/actors                   | Gets a list of actor      | N/A                           | N/A |              |
+| /api/actors/{actorid}         | Get a actor               | N/A                           | N/A | N/A          |
+| /api/users                    | Gets a list of actor      | N/A                           | N/A |              |
+| /api/users/{userid}           | Get a actor               | N/A                           | N/A | Delete users |
+| ...                           | ...                       | ...                           | ... | ...          |
 
+[Swaggerhub](https://app.swaggerhub.com/)
 
 ## Security and Authentication
 
