@@ -24,7 +24,7 @@ router.get('/:id', asyncHandler(async (req, res) => {
 }));
 
 // Get movie reviews
-router.get('/:id/reviews', (req, res) => {
+router.get('/:id/reviews', asyncHandler( async(req, res) => {
     const id = parseInt(req.params.id);
     // find reviews in list
     if (movieReviews.id == id) {
@@ -35,10 +35,10 @@ router.get('/:id/reviews', (req, res) => {
             status_code: 404
         });
     }
-});
+}));
 
 //Post a movie review
-router.post('/:id/reviews', (req, res) => {
+router.post('/:id/reviews',  asyncHandler( async(req, res) => {
     const id = parseInt(req.params.id);
 
     if (movieReviews.id == id) {
@@ -53,7 +53,23 @@ router.post('/:id/reviews', (req, res) => {
             status_code: 404
         });
     }
-});
+}));
+
+// Delete movie reviews
+router.delete('/:id/reviews', asyncHandler( async(req, res) => {
+    const id = parseInt(req.params.id);
+    // find reviews in list
+    const movieReviews = await movieReviews.find(id);
+    if (movieReviews.id == id) {
+        movieReviews.deleteOne(movieReviews.id);
+        res.status(200).json(movieReviews);
+    } else {
+        res.status(404).json({
+            message: 'The resource you requested could not be found.',
+            status_code: 404
+        });
+    }
+}));
 
 router.get('/tmdb/upcoming', asyncHandler( async(req, res) => {
     const upcomingMovies = await getUpcomingMovies();
