@@ -3,7 +3,7 @@ import { tvs, tvReviews, tvDetails } from './tvsData';
 import uniqid from 'uniqid';
 import tvModel from './tvModel';
 import asyncHandler from 'express-async-handler';
-import { getUpcomingTvs } from '../tmdb-api';
+import { getUpcomingTvs, getTvGenres, getTvImages } from '../tmdb-api';
 
 const router = express.Router();
 
@@ -58,7 +58,18 @@ router.post('/:id/reviews', (req, res) => {
 router.get('/tmdb/upcoming', asyncHandler( async(req, res) => {
     const upcomingTvs = await getUpcomingTvs();
     res.status(200).json(upcomingTvs);
-  }));
+}));
+
+router.get('/:id/images', asyncHandler( async(req, res) => {
+    const id = parseInt(req.params.id);
+    const tvImages = await getTvImages(id);
+    res.status(200).json(tvImages);
+}));
+
+router.get('/genres', asyncHandler( async(req, res) => {
+    const tvGenres = await getTvGenres();
+    res.status(200).json(tvGenres);
+}));
 
 
 export default router;
