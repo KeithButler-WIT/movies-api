@@ -211,6 +211,81 @@ paths:
         - moviestore_auth:
             - write:movies
             - read:movies
+
+  /api/tvs:
+    post:
+      tags:
+        - tv
+      summary: Add a new tv to the store
+      description: Add a new tv to the store
+      operationId: addTv
+      requestBody:
+        description: Create a new tv in the store
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tv'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Tv'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Tv'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tv'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Tv'
+        '405':
+          description: Invalid input
+      security:
+        - tvstore_auth:
+            - write:tvs
+            - read:tvs
+  /api/tvs/:id:
+    get:
+      tags:
+        - tv
+      summary: Finds Tvs by tags
+      description: Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.
+      operationId: findByTvDBId
+      parameters:
+        - name: tags
+          in: query
+          description: Tags to filter by
+          required: false
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Tv'
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Tv'
+        '400':
+          description: Invalid tag value
+      security:
+        - tvstore_auth:
+            - write:tvs
+            - read:tvs
+
   /api/persons:
     get:
       tags:
