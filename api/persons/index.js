@@ -3,6 +3,7 @@ import { persons, personReviews, personDetails } from './personsData';
 import uniqid from 'uniqid';
 import personModel from './personModel';
 import asyncHandler from 'express-async-handler';
+import { getActorImages } from '../tmdb-api';
 
 const router = express.Router();
 
@@ -20,6 +21,17 @@ router.get('/:id', asyncHandler(async (req, res) => {
     } else {
         res.status(404).json({message: 'The resource you requested could not be found.', status_code: 404});
     }
+}));
+
+router.get('/:id/images/', asyncHandler( async(req, res) => {
+    const actorImages = await getActorImages();
+    res.status(200).json(actorImages);
+}));
+
+router.get('/:id/combinedCredits', asyncHandler( async(req, res) => {
+    const id = parseInt(req.params.id);
+    const actorImages = await getActorImages(id);
+    res.status(200).json(actorImages);
 }));
 
 export default router;
