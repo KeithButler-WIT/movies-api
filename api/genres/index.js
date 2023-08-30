@@ -10,6 +10,7 @@ router.get('/', async (req, res) => {
     res.status(200).json(genres);
 });
 
+// Get genre by id
 router.get('/:id', asyncHandler(async (req, res) => {
     const id = parseInt(req.params.id);
     const genre = await Genre.findByGenreDBId(id);
