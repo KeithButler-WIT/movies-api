@@ -1,3 +1,7 @@
+#+title: Openapi
+
+* Description
+#+begin_src yaml :tangle openapi.yaml
 openapi: 3.0.3
 info:
   title: movies-api - OpenAPI 3.0
@@ -31,9 +35,16 @@ tags:
     externalDocs:
       description: Find out more
       url: https://github.com/keithbutler-wit/movies-api
+#+end_src
 
+* Paths
+#+begin_src yaml :tangle openapi.yaml
 paths:
+#+end_src
 
+** Movies
+*** api movies
+#+begin_src yaml :tangle openapi.yaml
   /api/movies:
     post:
       tags:
@@ -70,7 +81,10 @@ paths:
         - moviestore_auth:
             - write:movies
             - read:movies
+#+end_src
 
+*** api movies :id
+#+begin_src yaml :tangle openapi.yaml
   /api/movies/:id:
     get:
       tags:
@@ -108,7 +122,10 @@ paths:
         - moviestore_auth:
             - write:movies
             - read:movies
+#+end_src
 
+*** api movies tmdb upcoming
+#+begin_src yaml :tangle openapi.yaml
   /api/movies/tmdb/upcoming:
     get:
       tags:
@@ -135,7 +152,10 @@ paths:
         - moviestore_auth:
             - write:movies
             - read:movies
+#+end_src
 
+*** api movies tmdb popularMovies
+#+begin_src yaml :tangle openapi.yaml
   /api/movies/tmdb/popularMovies:
     get:
       tags:
@@ -162,7 +182,10 @@ paths:
         - moviestore_auth:
             - write:movies
             - read:movies
+#+end_src
 
+*** api movies :id images
+#+begin_src yaml :tangle openapi.yaml
   /api/movies/:id/images:
     get:
       tags:
@@ -197,7 +220,10 @@ paths:
         - moviestore_auth:
             - write:movies
             - read:movies
+#+end_src
 
+*** api movies :id reviews
+#+begin_src yaml :tangle openapi.yaml
   /api/movies/:id/reviews:
     get:
       tags:
@@ -302,7 +328,11 @@ paths:
         - moviestore_auth:
             - write:movies
             - read:movies
+#+end_src
 
+** Tvs
+*** api tvs
+#+begin_src yaml :tangle openapi.yaml
   /api/tvs:
     post:
       tags:
@@ -339,7 +369,10 @@ paths:
         - tvstore_auth:
             - write:tvs
             - read:tvs
+#+end_src
 
+*** api tvs :id
+#+begin_src yaml :tangle openapi.yaml
   /api/tvs/:id:
     get:
       tags:
@@ -377,7 +410,10 @@ paths:
         - tvstore_auth:
             - write:tvs
             - read:tvs
+#+end_src
 
+*** api tvs tmdb upcoming
+#+begin_src yaml :tangle openapi.yaml
   /api/tvs/tmdb/upcoming:
     get:
       tags:
@@ -404,7 +440,10 @@ paths:
         - tvstore_auth:
             - write:tvs
             - read:tvs
+#+end_src
 
+*** api tvs genres
+#+begin_src yaml :tangle openapi.yaml
   /api/tvs/genres:
     get:
       tags:
@@ -439,7 +478,10 @@ paths:
         - tvstore_auth:
             - write:tvs
             - read:tvs
+#+end_src
 
+*** api tvs :id images
+#+begin_src yaml :tangle openapi.yaml
   /api/tvs/:id/images:
     get:
       tags:
@@ -474,7 +516,10 @@ paths:
         - tvstore_auth:
             - write:tvs
             - read:tvs
+#+end_src
 
+*** api tvs :id reviews
+#+begin_src yaml :tangle openapi.yaml
   /api/tvs/:id/reviews:
     get:
       tags:
@@ -579,7 +624,11 @@ paths:
         - tvstore_auth:
             - write:tvs
             - read:tvs
+#+end_src
 
+** Persons
+*** api persons
+#+begin_src yaml :tangle openapi.yaml
   /api/persons:
     get:
       tags:
@@ -616,7 +665,10 @@ paths:
         - personstore_auth:
             - write:persons
             - read:persons
+#+end_src
 
+*** api persons :id
+#+begin_src yaml :tangle openapi.yaml
   /api/persons/:id:
     get:
       tags:
@@ -653,7 +705,10 @@ paths:
         - personstore_auth:
             - write:persons
             - read:persons
+#+end_src
 
+*** api persons :id images
+#+begin_src yaml :tangle openapi.yaml
   /api/persons/:id/images:
     get:
       tags:
@@ -690,7 +745,10 @@ paths:
         - personstore_auth:
             - write:persons
             - read:persons
+#+end_src
 
+*** api persons :id combinedCredits
+#+begin_src yaml :tangle openapi.yaml
   /api/persons/:id/combinedCredits:
     get:
       tags:
@@ -727,7 +785,11 @@ paths:
         - personstore_auth:
             - write:persons
             - read:persons
+#+end_src
 
+** Users
+*** api users
+#+begin_src yaml :tangle openapi.yaml
   /api/users:
     get:
       tags:
@@ -757,7 +819,10 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/User'
+#+end_src
 
+*** api users :id
+#+begin_src yaml :tangle openapi.yaml
   /api/users/:id:
     delete:
       tags:
@@ -777,7 +842,10 @@ paths:
           description: Invalid username supplied
         '404':
           description: User not found
+#+end_src
 
+*** api users register
+#+begin_src yaml :tangle openapi.yaml
   /api/users/?action=register:
     post:
       tags:
@@ -807,7 +875,10 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/User'
+#+end_src
 
+*** api users authenticate
+#+begin_src yaml :tangle openapi.yaml
   /api/users/?action=authenticate:
     get:
       tags:
@@ -851,10 +922,16 @@ paths:
                 type: string
         '400':
           description: Invalid username/password supplied
+#+end_src
 
+* Components
+#+begin_src yaml :tangle openapi.yaml
 components:
   schemas:
+#+end_src
 
+** Person
+#+begin_src yaml :tangle openapi.yaml
     Person:
       type: object
       properties:
@@ -925,7 +1002,10 @@ components:
           type: string
       xml:
         name: person
+#+end_src
 
+** User
+#+begin_src yaml :tangle openapi.yaml
     User:
       type: object
       properties:
@@ -941,7 +1021,10 @@ components:
           example: '12345'
       xml:
         name: user
+#+end_src
 
+** Movie
+#+begin_src yaml :tangle openapi.yaml
     Movie:
       required:
         - name
@@ -1047,7 +1130,10 @@ components:
         #     - sold
       xml:
         name: movie
+#+end_src
 
+** Tv
+#+begin_src yaml :tangle openapi.yaml
     Tv:
       required:
         - name
@@ -1179,3 +1265,4 @@ components:
       type: apiKey
       name: api_key
       in: header
+#+end_src
