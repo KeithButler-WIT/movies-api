@@ -34,6 +34,7 @@ git clone https://github.com/KeithButler-WIT/movies-api.git
 ``` sh
 cd movies-api
 npm install
+npm start
 ```
 ​
 
@@ -60,7 +61,7 @@ The endpoint design can be viewed [here](http://localhost:8080) when the api is 
 
 ## Security and Authentication
 
-Movies/Actors/Shows routes are protected and require the user to be signed in to view them.
+Movies/Actors/Shows are not protected but the parameterised routes are protected and require the user to be signed in to view them.
 
 Users can register at route 
 Then can authenticate at route 
@@ -68,8 +69,7 @@ Then can authenticate at route
 
 ## Integrating with React App
 ​
-Describe how you integrated your React app with the API. Perhaps link to the React App repo and give an example of an API call from React App. For example:
-​
+To Integerate a react ap with the API code like the follwing example should be used.
 
 ```Javascript
 export const getMovies = () => {
