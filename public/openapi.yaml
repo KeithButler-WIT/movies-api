@@ -177,13 +177,65 @@ paths:
         - moviestore_auth:
             - write:movies
             - read:movies
-  /tmdb/upcoming:
+  /api/movies/tmdb/upcoming:
     get:
       tags:
         - movie
       summary: List all upcoming movies
       description: Returns a movie list
       operationId: getMovieById
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Movie'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Movie'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Movie not found
+      security:
+        - api_key: []
+        - moviestore_auth:
+            - write:movies
+            - read:movies
+  /api/movies/tmdb/popularMovies:
+    get:
+      tags:
+        - movie
+      summary: List all popular movies
+      description: Returns a movie list
+      operationId: getMovieById
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Movie'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Movie'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Movie not found
+      security:
+        - api_key: []
+        - moviestore_auth:
+            - write:movies
+            - read:movies
+  /api/movies/:id/images:
+    get:
+      tags:
+        - movie
+      summary: List all upcoming movies
+      description: Returns a list of all movie images
+      operationId: getPopularMovies
       parameters:
         - name: movieId
           in: path
@@ -285,6 +337,100 @@ paths:
         - tvstore_auth:
             - write:tvs
             - read:tvs
+  /api/tvs/tmdb/upcoming:
+    get:
+      tags:
+        - tv
+      summary: List all upcoming tvs
+      description: Returns a tv list
+      operationId: getTvById
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tv'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Tv'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Tv not found
+      security:
+        - api_key: []
+        - tvstore_auth:
+            - write:tvs
+            - read:tvs
+  /api/tvs/genres:
+    get:
+      tags:
+        - tv
+      summary: List all tv genres
+      description: Returns a genre list
+      operationId: getTvGenres
+      parameters:
+        - name: tvId
+          in: path
+          description: ID of tv to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tv'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Tv'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Tv not found
+      security:
+        - api_key: []
+        - tvstore_auth:
+            - write:tvs
+            - read:tvs
+  /api/tvs/:id/images:
+    get:
+      tags:
+        - tv
+      summary: List all tvs images
+      description: Returns a list of all tv images
+      operationId: getPopularTvs
+      parameters:
+        - name: tvId
+          in: path
+          description: ID of tv to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tv'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Tv'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Tv not found
+      security:
+        - api_key: []
+        - tvstore_auth:
+            - write:tvs
+            - read:tvs
 
   /api/persons:
     get:
@@ -316,12 +462,12 @@ paths:
         '400':
           description: Invalid ID supplied
         '404':
-          description: Movie not found
+          description: Person not found
       security:
         - api_key: []
-        - moviestore_auth:
-            - write:movies
-            - read:movies
+        - personstore_auth:
+            - write:persons
+            - read:persons
   /api/persons/:id:
     get:
       tags:
@@ -352,12 +498,84 @@ paths:
         '400':
           description: Invalid ID supplied
         '404':
-          description: Movie not found
+          description: Person not found
       security:
         - api_key: []
-        - moviestore_auth:
-            - write:movies
-            - read:movies
+        - personstore_auth:
+            - write:persons
+            - read:persons
+  /api/persons/:id/images:
+    get:
+      tags:
+        - person
+      summary: Finds Actors images based on actor id
+      description:
+      operationId: getActorImages
+      parameters:
+        - name: personId
+          in: query
+          description: Id to filter by
+          required: false
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Person'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Person'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Person not found
+      security:
+        - api_key: []
+        - personstore_auth:
+            - write:persons
+            - read:persons
+  /api/persons/:id/combinedCredits:
+    get:
+      tags:
+        - person
+      summary: Finds Actors credits based on actor id
+      description:
+      operationId: getCombinedCredits
+      parameters:
+        - name: personId
+          in: query
+          description: Id to filter by
+          required: false
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Person'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Person'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Person not found
+      security:
+        - api_key: []
+        - personstore_auth:
+            - write:persons
+            - read:persons
 
   /api/users:
     get:
