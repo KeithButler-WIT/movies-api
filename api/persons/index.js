@@ -3,7 +3,7 @@ import { persons, personReviews, personDetails } from './personsData';
 import uniqid from 'uniqid';
 import personModel from './personModel';
 import asyncHandler from 'express-async-handler';
-import { getActorImages } from '../tmdb-api';
+import { getActorImages, getCombinedCredits } from '../tmdb-api';
 
 const router = express.Router();
 
@@ -30,7 +30,7 @@ router.get('/:id/images/', asyncHandler( async(req, res) => {
 
 router.get('/:id/combinedCredits', asyncHandler( async(req, res) => {
     const id = parseInt(req.params.id);
-    const actorImages = await getActorImages(id);
+    const actorImages = await getCombinedCredits(id);
     res.status(200).json(actorImages);
 }));
 
