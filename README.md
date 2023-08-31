@@ -14,20 +14,7 @@ Student Number: 20089137
 - Feature 4 - User authentication
 - Feature 5 - User creation
 - Feature 6 - mongoDB implementation
-- Feature 7 - 
-- Get Similar Movies:
-  - Get a list of similar movies using a movie ID.
-  - Get a list of similar movies using a movie genre.
-  - Get a list of similar movies using a movie language.
-- Get Similar Shows:
-  - Get a list of similar shows using a show ID.
-  - Get a list of similar shows using a show genre.
-  - Get a list of similar shows using a show language.
-- Get Similar actors:
-  - Get a list of similar actors using an actor ID.
-  - Get a list of similar actors using an actor name.
-  - Get a list of similar actors using an actor popularity.
-    ​
+- Feature 7 - Upcoming movies endpoint
 
 ## Installation Requirements
 
@@ -68,20 +55,8 @@ SECRET=YourJWTSecret
 
 ## API Design
 ​
-|                               | GET                       | POST                          | PUT | DELETE       |
-|-------------------------------|---------------------------|-------------------------------|-----|--------------|
-| /api/movies                   | Gets a list of movies     | N/A                           | N/A |              |
-| /api/movies/{movieid}         | Get a Movie               | N/A                           | N/A | N/A          |
-| /api/movies/{movieid}/reviews | Get all reviews for movie | Create a new review for Movie | N/A | N/A          |
-| /api/shows                    | Gets a list of shows      | N/A                           | N/A |              |
-| /api/shows/{showid}           | Get a show                | N/A                           | N/A | N/A          |
-| /api/actors                   | Gets a list of actor      | N/A                           | N/A |              |
-| /api/actors/{actorid}         | Get a actor               | N/A                           | N/A | N/A          |
-| /api/users                    | Gets a list of actor      | N/A                           | N/A |              |
-| /api/users/{userid}           | Get a actor               | N/A                           | N/A | Delete users |
-| ...                           | ...                       | ...                           | ... | ...          |
-
-[Swaggerhub](https://app.swaggerhub.com/)
+This api was designed using [Swagger](https://swagger.io/)
+The endpoint design can be viewed [here](http://localhost:8080) when the api is running.
 
 ## Security and Authentication
 
@@ -124,7 +99,6 @@ export const getMovies = () => {
 ​
 
 ## Independent learning.
-​
-. . State the non-standard aspects of React/Express/Node (or other related technologies) that you researched and applied in this assignment . .
 
-### Swagger
+### [Swagger](https://swagger.io/)
+Swagger was used to design this api. Following the OpenAPI 3.0 Specification.
