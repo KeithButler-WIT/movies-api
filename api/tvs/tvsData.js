@@ -1212,7 +1212,22 @@ export const tvDetails = {
 export const tvReviews = {
   "id": 94722,
   "page": 1,
-  "results": [],
+  "results": [
+        {
+            "author": "roger",
+            "content": "Thats hours of my life im never getting back, well work it.",
+            "created_at": "2021-03-01T17:10:51.977Z",
+            "id": "603d201b33a533004bd1906e",
+            "updated_at": "2021-03-07T15:46:34.342Z"
+        },
+        {
+            "author": "jim",
+            "content": "What a great tv show, please follow my blog ",
+            "created_at": "2021-03-01T17:13:07.315Z",
+            "id": "603d20a3e267de005151480c",
+            "updated_at": "2021-03-07T15:47:13.254Z"
+        }
+  ],
   "total_pages": 0,
   "total_results": 0
 };

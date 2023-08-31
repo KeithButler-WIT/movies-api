@@ -3,7 +3,7 @@ import { tvs, tvReviews, tvDetails } from './tvsData';
 import uniqid from 'uniqid';
 import tvModel from './tvModel';
 import asyncHandler from 'express-async-handler';
-import { getUpcomingTvs, getTvGenres, getTvImages } from '../tmdb-api';
+import { getUpcomingTvs, getTvGenres, getTvImages, getTvShowImages } from '../tmdb-api';
 
 const router = express.Router();
 
@@ -24,7 +24,7 @@ router.get('/:id', asyncHandler(async (req, res) => {
 }));
 
 // Get tv reviews
-router.get('/:id/reviews', (req, res) => {
+router.get('/:id/reviews', asyncHandler( async(req, res) => {
     const id = parseInt(req.params.id);
     // find reviews in list
     if (tvReviews.id == id) {
@@ -35,7 +35,8 @@ router.get('/:id/reviews', (req, res) => {
             status_code: 404
         });
     }
-});
+}));
+
 
 //Post a tv review
 router.post('/:id/reviews', (req, res) => {
@@ -55,6 +56,22 @@ router.post('/:id/reviews', (req, res) => {
     }
 });
 
+// Delete tv reviews
+router.delete('/:id/reviews', asyncHandler( async(req, res) => {
+    const id = parseInt(req.params.id);
+    // find reviews in list
+    const tvReviews = await tvReviews.find(id);
+    if (tvReviews.id == id) {
+        tvReviews.deleteOne(tvReviews.id);
+        res.status(200).json(tvReviews);
+    } else {
+        res.status(404).json({
+            message: 'The resource you requested could not be found.',
+            status_code: 404
+        });
+    }
+}));
+
 router.get('/tmdb/upcoming', asyncHandler( async(req, res) => {
     const upcomingTvs = await getUpcomingTvs();
     res.status(200).json(upcomingTvs);
@@ -62,9 +79,15 @@ router.get('/tmdb/upcoming', asyncHandler( async(req, res) => {
 
 router.get('/:id/images', asyncHandler( async(req, res) => {
     const id = parseInt(req.params.id);
-    const tvImages = await getTvImages(id);
+    const tvImages = await getTvShowImages(id);
     res.status(200).json(tvImages);
 }));
+
+// router.get('/:id/images', asyncHandler( async(req, res) => {
+//     const id = parseInt(req.params.id);
+//     const tvImages = await getTvImages(id);
+//     res.status(200).json(tvImages);
+// }));
 
 router.get('/genres', asyncHandler( async(req, res) => {
     const tvGenres = await getTvGenres();
