@@ -24,6 +24,17 @@ router.get('/:id', asyncHandler(async (req, res) => {
 }));
 
 // Get movie reviews
+// router.get('/:id/reviews', asyncHandler( async(req, res) => {
+//     const id = parseInt(req.params.id);
+//     const movie = await movieModel.findByMovieDBId(id);
+//     if (movie.id == id) {
+//         const movieReviews = await getMovieReviews(id);
+//         res.status(200).json(movieReviews);
+//     } else {
+//         res.status(404).json({message: 'The resource you requested could not be found.', status_code: 404});
+//     }
+// }));
+// Get movie reviews
 router.get('/:id/reviews', asyncHandler( async(req, res) => {
     const id = parseInt(req.params.id);
     // find reviews in list
@@ -36,6 +47,15 @@ router.get('/:id/reviews', asyncHandler( async(req, res) => {
         });
     }
 }));
+
+// router.get('/:id/reviews', asyncHandler( async(req, res) => {
+//     const id = parseInt(req.params.id);
+//     // const movieReviews = await movieReviews.find(id);
+//     // find reviews in list
+//     // if (movieReviews.id == id) {
+//     const movieReviews = await getMovieReviews(id);
+//     res.status(200).json(movieReviews);
+// }));
 
 //Post a movie review
 router.post('/:id/reviews',  asyncHandler( async(req, res) => {
